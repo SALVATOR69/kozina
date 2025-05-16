@@ -125,3 +125,19 @@ h1, h2 {
   background-color: #ff7043;
   color: #121212;
 }
+footer {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #1e1e1e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  border-top: 1px solid #37474f;
+  color: #b0bec5;
+  font-size: 0.95rem;
+}
+
+footer p {
+  margin: 5px 10px;
+}
