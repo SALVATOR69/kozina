@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap');
+
+/* Style global */
+body {
+  margin: 0;
+  padding: 40px 50px;
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  color: #80cbc4;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.category {
+  margin-bottom: 60px;
+  padding-bottom: 35px;
+  border-bottom: 1px solid #2a2a2a;
+}
+
+.topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.topic {
+  background: #263238;
+  border-radius: 10px;
+  padding: 20px 25px;
+  cursor: pointer;
+  flex: 1 1 320px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.75);
+  transition: background-color 0.3s;
+  font-size: 1.05rem;
+  user-select: none;
+}
+
+.topic:hover, .topic:focus {
+  background: #37474f;
+  outline: none;
+}
+
+/* Modal */
+#modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  padding: 20px;
+}
+
+#modal.active {
+  display: flex;
+}
+
+#modalContent {
+  background: #263238;
+  padding: 35px 30px;
+  border-radius: 12px;
+  width: 380px;
+  max-width: 95vw;
+  box-shadow: 0 0 20px #80cbc4;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  font-family: 'Roboto', sans-serif;
+}
+
+#modalContent h3 {
+  margin-top: 0;
+  margin-bottom: 28px;
+  color: #80cbc4;
+  font-weight: 700;
+}
+
+.buttons {
+  margin-top: 28px;
+  display: flex;
+  gap: 20px 12px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Boutons minces avec bon espacement */
+.btn {
+  flex: 1 1 130px;
+  background-color: #455a64;
+  border: none;
+  border-radius: 6px;
+  padding: 9px 14px;
+  color: #e0e0e0;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover, .btn:focus {
+  background-color: #80cbc4;
+  color: #121212;
+  outline: none;
+}
+
+.btn.close-btn {
+  background-color: #bf360c;
+  flex: 1 1 100%;
+  margin-top: 25px;
+  padding: 11px 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.btn.close-btn:hover, .btn.close-btn:focus {
+  background-color: #ff7043;
+  color: #121212;
+}
